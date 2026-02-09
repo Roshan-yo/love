@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <link rel="stylesheet" href="yes.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1 id="name"></h1>
+    <h2>You said yes.</h2>
+
+    <div class="line"></div>
+
+    <p>
+      And that’s all I needed to know.
+    </p>
+  </div>
+
+  <script>
+    const name = localStorage.getItem("valName");
+    document.getElementById("name").innerText = name || "";
+  </script>
+
+</body>
+</html>
