@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1 class="name">Fiyona</h1>
+
+    <h2>Will you be my Valentine?</h2>
+
+    <div class="choices">
+      <button class="yes" onclick="goYes()">YES</button>
+      <button class="no" onclick="jump(this)">NO</button>
+    </div>
+  </div>
+
+  <script>
+    function goYes() {
+      window.location.href = "yes.html";
+    }
+
+    function jump(btn) {
+      btn.style.position = "absolute";
+      btn.style.top = Math.random() * 80 + "%";
+      btn.style.left = Math.random() * 80 + "%";
+    }
+  </script>
+
+</body>
+</html>
