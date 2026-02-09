@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.box {
+  text-align: center;
+}
+
+.name {
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.choices {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 32px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+.no {
+  opacity: 0.7;
+}
